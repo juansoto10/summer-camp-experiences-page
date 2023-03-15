@@ -16,13 +16,17 @@ module.exports = {
       colors: {
         'main': '#FFFFFF',
         'dark-main': '#181818',
-        'dark-sec': '#242526',
+        'dark-sec': '#0a0a0a',
         'dark-txt': '#c1c1c1',
         'fb-gray': '#f0f2f5',
         'purple': '#7C24D9',
         'green': 'rgb(45 212 191);',
         'misty': '#BFD2D0',
         'purple-mid': '#A084DC',
+      },
+      boxShadow: {
+        '3xl': '1px 0px 7px -1px rgba(0, 0, 0, 0.3)',
+        'lin': '1px 0px 2px 1px rgba(0, 0, 0, 0.3)',
       },
       keyframes: {
         wiggle: {
@@ -44,7 +48,7 @@ module.exports = {
         card: "card 10000ms ease-in-out",
       }
     },
-    boxShadow: {
+/*     boxShadow: {
       '2sm': '0 25px 50px 3px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.04)',
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -58,7 +62,7 @@ module.exports = {
       '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
-    },
+    }, */
     screens: {
       's': '450px',
       // => @media (min-width: 450px) { ... }
@@ -75,7 +79,7 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      '2xl': '1600px',
       // => @media (min-width: 1536px) { ... }
     }
   },

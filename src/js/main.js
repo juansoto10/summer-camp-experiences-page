@@ -25,6 +25,14 @@ menuToggle.addEventListener('click', function() {
 const menuIcon = document.querySelector('ion-icon');
 const menuItems = document.querySelector('#menu-items');
 
+const darkModeButton = document.querySelector('#dark-mode');
+const body = document.querySelector('body');
+
+
+darkModeButton.addEventListener('click', () => {
+  body.classList.toggle('dark');
+})
+
 
 menuIcon.addEventListener('click', () => {
   let list = document.querySelector('ul');

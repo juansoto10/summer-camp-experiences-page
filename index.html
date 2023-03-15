@@ -8,161 +8,187 @@
     <title>Summer Camp Experiences in the USA</title>
   </head>
 
-  <body>
-    <nav class="sticky top-0 left-0 h-auto w-full p-6 bg-main dark:bg-dark-main shadow md:flex md:justify-between md:items-center">
+  <body class="bg-main dark:bg-dark-main">
+    <nav class="sticky top-0 left-0 h-auto w-full z-[1] p-6 shadow-md md:flex md:justify-between md:items-center tracking-wide bg-main dark:bg-dark-main dark:shadow-sm dark:shadow-orange-400">
       <div class="flex justify-between items-center">
-        <a href="" class="flex flex-row items-center">
+        <a href="" class="flex flex-row justify-center items-center">
           <img
             class="w-9 rounded-md"
             src="https://i.postimg.cc/59Y74fxz/download-35.png" 
             alt="Camp Experiences Logo"
           >
-          <span class="leading-4 pl-3">Summer Camp Experiences</span>
+          <span class="pl-3 text-lg md:text-xl lg:text-2xl 2xl:text-3xl leading-5 font-bold text-orange-400 drop-shadow-lg relative top-[0.2rem]">Summer Camp Experiences</span>
         </a>
 
-        <span class="flex items-center text-4xl cursor-pointer md:hidden">
+        <span class="flex items-center text-4xl cursor-pointer md:hidden text-orange-400">
           <ion-icon id="menu" name="menu-outline"></ion-icon>
         </span> 
       </div>
 
-      <ul id="menu-items" class="hidden md:flex md:items-center z-[1] md:z-auto md:static bg-slate-500 md:bg-main w-full h-100 md:h-auto md:w-auto left-0 md:py-0 pl-7 md:pl-0 opacity-0 md:opacity-100 fixed top-[84px] transition-all duration-300">
-        <li class="mx-4 my-8 md:my-0">
+      <ul id="menu-items" class="bg-main dark:bg-dark-main md:flex md:items-center z-[1] md:z-auto md:static w-full h-100 md:h-auto md:w-auto left-0 md:py-0 pl-7 md:pl-0 opacity-0 md:opacity-100 fixed top-[84px] transition-all duration-300 text-orange-400 font-bold">
+        <li class="flex items-center text-xl pl-4 pr-6 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
+          <ion-icon id="dark-mode" name="contrast-outline"></ion-icon>
+        </li>
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Home</a>
         </li>
-        <li class="px-3 my-8 md:my-0">
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Experiences</a>
         </li>
-        <li class="px-3 my-8 md:my-0">
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Share</a>
         </li>
-        <li class="px-3 my-8 md:my-0">
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Guide</a>
         </li>
-        <li class="px-3 my-8 md:my-0">
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Questions</a>
         </li>
-        <li class="px-3 my-8 md:my-0">
+        <li class="px-4 my-8 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">About</a>
         </li>
       </ul>
     </nav>
 
-    <main class="bg-main dark:bg-dark-main px-8 py-5">
-      <header class="w-full min-h-100 mb-14">
+    <main class="bg-main dark:bg-dark-main dark:text-main px-10 py-12 md:py-20 xl:py-24 2xl:py-28">
+      <header class="w-full min-h-100 mb-20 sm:mb-24 lg:mb-0 lg:h-100">
         <div class="w-full flex flex-wrap justify-center">
-          <div class="flex flex-wrap justify-center">
-            <h1 class="w-fit text-4xl font-bold text-center text-orange-400 mb-10">
+          <div class="flex flex-wrap justify-center max-w-[650px] sm:pl-6 md:w-1/2 lg:max-w-[600px] 2xl:max-w-[750px]">
+            <h1 class="w-fit text-4xl tracking-wide sm:text-5xl lg:text-6xl font-bold text-center text-orange-400 mb-10 2xl:mb-20 2xl:w-full">
               Welcome to our Summer Camp Experiences Site
             </h1>
 
-            <p class="mb-10">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eligendi saepe. Ea, atque fuga hic ducimus natus id tempore consectetur incidunt nesciunt. Aspernatur recusandae laudantium perspiciatis iste ullam nemo quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias at id est illum, facilis veritatis, laudantium nobis, tenetur magni cumque commodi culpa saepe dolore dolorum repudiandae ullam. Obcaecati, enim quidem.
+            <p class="mb-10 2xl:mb-16 self-center text-lg sm:text-xl lg:text-2xl">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eligendi saepe. Ea, atque fuga hic ducimus natus id tempore consectetur incidunt nesciunt. Aspernatur recusandae laudantium perspiciatis iste ullam nemo quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias at id est illum, facilis veritatis, laudantium nobis, tenetur magni cumque commodi culpa saepe dolore dolorum repudiandae ullam.
             </p>
+
+            <a
+              class="text-center text-xl leading-5 text-main bg-orange-400 p-4 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
+              href="#"
+            >
+              Read Experiences
+            </a>
           </div>
-          
-          <div class="w-full flex justify-center items-center">
+
+          <div class="w-full flex justify-center items-center md:w-1/2 md:pl-9 mt-14">
             <img
-              class="mb-6 rounded-lg w-full"
+              class="mb-6 sm:mb-0 rounded-3xl w-11/12 max-w-[600px]"
               src="https://i.postimg.cc/sDRmRxvK/people-2567915-960-720.jpg" 
               alt="People in camp"
             >
           </div>
+          
         </div>
       </header>
 
-      <section class="w-full mb-14">
+      <section class="w-full mb-20 sm:mb-24 lg:mb-28">
         <div class="flex flex-col justify-center items-center">
-          <h2 class="text-3xl font-bold mb-9 text-center">
+          <h2 class="text-4xl tracking-wide sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
             Experiences
           </h2>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
-            <a class="mb-10" href="">
-              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 mb-4">
+            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="">
+              <article class="flex flex-col justify-center items-center rounded-xl shadow-md max-w-[380px] dark:bg-dark-sec">
                 <div>
                   <img
-                    class="w-full rounded-t-lg max-h-[250px]"
+                    class="w-full rounded-t-xl max-h-[250px]"
                     src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
                     alt="person"
                   >
-    
-                  <h3 class="px-3 pt-3 font-bold text-lg">
-                    Maja, 29
-                  </h3>
-    
-                  <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
-                  </p>
+
+                  <div class="px-4 pt-3">
+                    <h3 class="font-bold text-lg mb-2 text-orange-400">
+                      Maja, 29
+                    </h3>
+      
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...
+                    </p>
+  
+                    <span class="block text-orange-500 text-sm text-right mb-1 font-light">Click to read</span>
+                  </div>        
+                </div>
+              </article>
+            </a>
+            
+            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="">
+              <article class="flex flex-col justify-center items-center rounded-xl shadow-md max-w-[380px] dark:bg-dark-sec">
+                <div>
+                  <img
+                    class="w-full rounded-t-xl max-h-[250px]"
+                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
+                    alt="person"
+                  >
+
+                  <div class="px-4 pt-3">
+                    <h3 class="font-bold text-lg mb-2 text-orange-400">
+                      Maja, 29
+                    </h3>
+      
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...
+                    </p>
+  
+                    <span class="block text-orange-500 text-sm text-right mb-1 font-light">Click to read</span>
+                  </div>        
                 </div>
               </article>
             </a>
 
-            <a class="mb-10" href="">
-              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="">
+              <article class="flex flex-col justify-center items-center rounded-xl shadow-md max-w-[380px] dark:bg-dark-sec">
                 <div>
                   <img
-                    class="w-full rounded-t-lg max-h-[250px]"
+                    class="w-full rounded-t-xl max-h-[250px]"
                     src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
                     alt="person"
                   >
-    
-                  <h3 class="px-3 pt-3 font-bold text-lg">
-                    Maja, 29
-                  </h3>
-    
-                  <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
-                  </p>
+
+                  <div class="px-4 pt-3">
+                    <h3 class="font-bold text-lg mb-2 text-orange-400">
+                      Maja, 29
+                    </h3>
+      
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...
+                    </p>
+  
+                    <span class="block text-orange-500 text-sm text-right mb-1 font-light">Click to read</span>
+                  </div>        
                 </div>
               </article>
             </a>
 
-            <a class="mb-10" href="">
-              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="">
+              <article class="flex flex-col justify-center items-center rounded-xl shadow-md max-w-[380px] dark:bg-dark-sec">
                 <div>
                   <img
-                    class="w-full rounded-t-lg max-h-[250px]"
+                    class="w-full rounded-t-xl max-h-[250px]"
                     src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
                     alt="person"
                   >
-    
-                  <h3 class="px-3 pt-3 font-bold text-lg">
-                    Maja, 29
-                  </h3>
-    
-                  <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
-                  </p>
+
+                  <div class="px-4 pt-3">
+                    <h3 class="font-bold text-lg mb-2 text-orange-400">
+                      Maja, 29
+                    </h3>
+      
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...
+                    </p>
+  
+                    <span class="block text-orange-500 text-sm text-right mb-1 font-light">Click to read</span>
+                  </div>        
                 </div>
               </article>
             </a>
-
-            <a class="mb-10" href="">
-              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
-                <div>
-                  <img
-                    class="w-full rounded-t-lg max-h-[250px]"
-                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
-                    alt="person"
-                  >
-    
-                  <h3 class="px-3 pt-3 font-bold text-lg">
-                    Maja, 29
-                  </h3>
-    
-                  <p class="p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
-                  </p>
-                </div>
-              </article>
-            </a>
-
           </div>
           
           
 
           <a
-            class="text-center " 
+            class="text-center text-xl leading-5 text-main bg-orange-400 p-4 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
             href="#"
           >
             See all
@@ -170,8 +196,8 @@
         </div>
       </section>
 
-      <section class="mb-14">
-        <h2 class="text-3xl font-bold mb-9 text-center">
+      <section class="mb-20 sm:mb-24 lg:mb-28">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
           Share your experience
         </h2>
 
@@ -179,8 +205,8 @@
 
       </section>
 
-      <section class="mb-14">
-        <h2 class="text-3xl font-bold mb-9 text-center">
+      <section class="mb-20 sm:mb-24 lg:mb-28">
+        <h2 class="text-4xl tracking-wide sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
           Guide
         </h2>
 
@@ -188,8 +214,8 @@
 
       </section>
 
-      <section class="mb-14">
-        <h2 class="text-3xl font-bold mb-9 text-center">
+      <section class="mb-20 sm:mb-24 lg:mb-28">
+        <h2 class="text-4xl tracking-wide sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
           Questions
         </h2>
 
@@ -197,8 +223,8 @@
 
       </section>
 
-      <section class="mb-14">
-        <h2 class="text-3xl font-bold mb-9 text-center">
+      <section class="mb-20 sm:mb-24 lg:mb-28">
+        <h2 class="text-4xl tracking-wide sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
           About
         </h2>
 
@@ -207,12 +233,12 @@
       </section>
     </main>
 
-    <footer class="px-6 py-4 shadow-inner">
+    <footer class="px-6 py-4 shadow-3xl dark:shadow-lin dark:shadow-orange-400 text-orange-400 dark:bg-dark-main">
       <div class="flex justify-between items-center">
         <span>© Copyright 2023</span>
 
         <a
-          class="flex items-center text-3xl" 
+          class="flex items-center text-3xl text-orange-400 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main" 
           href=""
         >
           <ion-icon name="logo-instagram"></ion-icon>
