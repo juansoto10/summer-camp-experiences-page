@@ -6,6 +6,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        '100': 'calc(100vh - 84px)',
+      },
       fontFamily: {
         'bungee': ['Bungee', 'cursive'],
         'ibmplex': ['"IBM Plex Mono"', 'monospace'],

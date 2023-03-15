@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <nav class="w-full bg-main dark:bg-dark-main">
-      <div class="flex flex-row px-6 py-3 justify-between">
+    <nav class="sticky top-0 left-0 h-auto w-full p-6 bg-main dark:bg-dark-main shadow md:flex md:justify-between md:items-center">
+      <div class="flex justify-between items-center">
         <a href="" class="flex flex-row items-center">
           <img
             class="w-9 rounded-md"
@@ -20,70 +20,203 @@
           <span class="leading-4 pl-3">Summer Camp Experiences</span>
         </a>
 
-        <div class="flex fixed top-10 right-24 text-4xl cursor-pointer md:hidden">
-          <!-- <button id="menu-toggle" class="hamburger inline-block p-2 rounded focus:outline-none">
-            <span class="bar block w-6 h-0.5 my-1 bg-purple rounded transition-transform transform active:translate-y-1 active:rotate-45"></span>
-            <span class="bar block w-6 h-0.5 my-1 bg-purple rounded transition-transform opacity-100 active:opacity-0"></span>
-            <span class="bar block w-6 h-0.5 my-1 bg-purple rounded transition-transform transform active:translate-y--1 active:rotate--45"></span>
-          </button> -->
-          <ion-icon name="menu-outline"></ion-icon>
-        </div>
-
-        <ul id="menu" class="hidden md:flex flex-row items-center">
-          <li class="px-3">
-            <a href="">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="">Experiences</a>
-          </li>
-          <li class="px-3">
-            <a href="">Share</a>
-          </li>
-          <li class="px-3">
-            <a href="">Guide</a>
-          </li>
-          <li class="px-3">
-            <a href="">Questions</a>
-          </li>
-          <li class="px-3">
-            <a href="">About</a>
-          </li>
-        </ul>
+        <span class="flex items-center text-4xl cursor-pointer md:hidden">
+          <ion-icon id="menu" name="menu-outline"></ion-icon>
+        </span> 
       </div>
+
+      <ul id="menu-items" class="hidden md:flex md:items-center z-[1] md:z-auto md:static bg-slate-500 md:bg-main w-full h-100 md:h-auto md:w-auto left-0 md:py-0 pl-7 md:pl-0 opacity-0 md:opacity-100 fixed top-[84px] transition-all duration-300">
+        <li class="mx-4 my-8 md:my-0">
+          <a href="">Home</a>
+        </li>
+        <li class="px-3 my-8 md:my-0">
+          <a href="">Experiences</a>
+        </li>
+        <li class="px-3 my-8 md:my-0">
+          <a href="">Share</a>
+        </li>
+        <li class="px-3 my-8 md:my-0">
+          <a href="">Guide</a>
+        </li>
+        <li class="px-3 my-8 md:my-0">
+          <a href="">Questions</a>
+        </li>
+        <li class="px-3 my-8 md:my-0">
+          <a href="">About</a>
+        </li>
+      </ul>
     </nav>
 
-    <main class="bg-main min-h-screen dark:bg-dark-main p-6">
-      <header>
-        <div class="w-full flex justify-center">
-          <div class="w-11/12 flex flex-wrap justify-center">
-            <h1 class="w-fit text-5xl font-bold text-center text-orange-400 mb-10">
+    <main class="bg-main dark:bg-dark-main px-8 py-5">
+      <header class="w-full min-h-100 mb-14">
+        <div class="w-full flex flex-wrap justify-center">
+          <div class="flex flex-wrap justify-center">
+            <h1 class="w-fit text-4xl font-bold text-center text-orange-400 mb-10">
               Welcome to our Summer Camp Experiences Site
             </h1>
 
-            <p>
+            <p class="mb-10">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eligendi saepe. Ea, atque fuga hic ducimus natus id tempore consectetur incidunt nesciunt. Aspernatur recusandae laudantium perspiciatis iste ullam nemo quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias at id est illum, facilis veritatis, laudantium nobis, tenetur magni cumque commodi culpa saepe dolore dolorum repudiandae ullam. Obcaecati, enim quidem.
             </p>
           </div>
           
-          <div>
-            <img 
-              src="" 
-              alt=""
+          <div class="w-full flex justify-center items-center">
+            <img
+              class="mb-6 rounded-lg w-full"
+              src="https://i.postimg.cc/sDRmRxvK/people-2567915-960-720.jpg" 
+              alt="People in camp"
             >
           </div>
         </div>
       </header>
 
-      <section>
+      <section class="w-full mb-14">
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-3xl font-bold mb-9 text-center">
+            Experiences
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+            <a class="mb-10" href="">
+              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+                <div>
+                  <img
+                    class="w-full rounded-t-lg max-h-[250px]"
+                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
+                    alt="person"
+                  >
+    
+                  <h3 class="px-3 pt-3 font-bold text-lg">
+                    Maja, 29
+                  </h3>
+    
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a class="mb-10" href="">
+              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+                <div>
+                  <img
+                    class="w-full rounded-t-lg max-h-[250px]"
+                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
+                    alt="person"
+                  >
+    
+                  <h3 class="px-3 pt-3 font-bold text-lg">
+                    Maja, 29
+                  </h3>
+    
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a class="mb-10" href="">
+              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+                <div>
+                  <img
+                    class="w-full rounded-t-lg max-h-[250px]"
+                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
+                    alt="person"
+                  >
+    
+                  <h3 class="px-3 pt-3 font-bold text-lg">
+                    Maja, 29
+                  </h3>
+    
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a class="mb-10" href="">
+              <article class="flex flex-col justify-center items-center rounded-lg shadow-md max-w-[380px]">
+                <div>
+                  <img
+                    class="w-full rounded-t-lg max-h-[250px]"
+                    src="https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg" 
+                    alt="person"
+                  >
+    
+                  <h3 class="px-3 pt-3 font-bold text-lg">
+                    Maja, 29
+                  </h3>
+    
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?
+                  </p>
+                </div>
+              </article>
+            </a>
+
+          </div>
+          
+          
+
+          <a
+            class="text-center " 
+            href="#"
+          >
+            See all
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <h2 class="text-3xl font-bold mb-9 text-center">
+          Share your experience
+        </h2>
+
+        <a href="#">Tell us about your experiences in this camps.</a>
 
       </section>
 
-      <section></section>
+      <section class="mb-14">
+        <h2 class="text-3xl font-bold mb-9 text-center">
+          Guide
+        </h2>
+
+        <a href="#">Read our Guide for tips on going to summer camps in the United States.</a>
+
+      </section>
+
+      <section class="mb-14">
+        <h2 class="text-3xl font-bold mb-9 text-center">
+          Questions
+        </h2>
+
+        <a href="#">Let us know if you have any questions about summer camps in the United States.</a>
+
+      </section>
+
+      <section class="mb-14">
+        <h2 class="text-3xl font-bold mb-9 text-center">
+          About
+        </h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod beatae laborum debitis dolor ipsum deleniti assumenda, molestias esse mollitia perferendis quis delectus sunt cupiditate, architecto accusantium exercitationem quisquam modi.</p>
+
+      </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="px-6 py-4 shadow-inner">
+      <div class="flex justify-between items-center">
+        <span>© Copyright 2023</span>
 
+        <a
+          class="flex items-center text-3xl" 
+          href=""
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
       </div>
     </footer>
 

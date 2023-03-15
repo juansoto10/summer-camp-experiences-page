@@ -5,7 +5,7 @@ menuToggle.addEventListener('click', function() {
   menu.classList.toggle('hidden');
 }); */
 
-const menuToggle = document.querySelector('#menu-toggle');
+/* const menuToggle = document.querySelector('#menu-toggle');
 const menu = document.querySelector('#menu');
 
 
@@ -15,8 +15,42 @@ menuToggle.addEventListener('click', function() {
   document.querySelectorAll('.bar').forEach(bar => {
     bar.classList.toggle('active');
   });
-});
+}); */
 
+/* function disableScroll(){  
+  window.scrollTo(0, 0);
+} */
+
+
+const menuIcon = document.querySelector('ion-icon');
+const menuItems = document.querySelector('#menu-items');
+
+
+menuIcon.addEventListener('click', () => {
+  let list = document.querySelector('ul');
+
+  menuIcon.name === 'menu-outline' ? (menuIcon.name = 'close-outline') : (menuIcon.name = 'menu-outline')
+
+  menuItems.classList.toggle('opacity-0')
+})
+
+
+function toggleScroll() {
+  if (!menuItems.classList.contains('opacity-0')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Call the toggleScroll function when the opacity of the ul element changes
+menuItems.addEventListener('transitionend', toggleScroll);
+
+
+/* const menu = (e) => {
+  e.name === 'menu' ? e.name = 'close' : e.name = 'menu'
+}
+ */
 
 /* 
 <style>
