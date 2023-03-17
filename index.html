@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <nav class="sticky top-0 left-0 h-auto w-full z-[1] p-6 shadow-md md:flex md:justify-between md:items-center tracking-wide bg-main dark:bg-dark-main dark:shadow-sm dark:shadow-orange-400">
       <div class="flex justify-between items-center">
         <!-- Logo and Title -->
-        <a href="" class="flex flex-row justify-center items-center">
+        <a href="/" class="flex flex-row justify-center items-center">
           <img
             class="w-9 rounded-md"
             src="https://i.postimg.cc/59Y74fxz/download-35.png" 
@@ -36,7 +36,7 @@
           <ion-icon id="dark-mode" name="contrast-outline"></ion-icon>
         </li>
         <li class="px-4 my-10 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
-          <a href="">Home</a>
+          <a href="/">Home</a>
         </li>
         <li class="px-4 my-10 md:my-0 transition ease-in-out duration-300 hover:text-dark-main dark:hover:text-main">
           <a href="">Experiences</a>
@@ -74,7 +74,7 @@
             </p>
 
             <a
-              class="text-center text-xl leading-5 text-main bg-orange-400 p-4 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
+              class="text-center lg:text-xl text-main bg-orange-400 p-4 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
               href="#"
             >
               Read Experiences
@@ -85,7 +85,7 @@
           <!-- Image container -->
           <div class="w-full flex justify-center items-center md:w-1/2 md:pl-9 mt-14">
             <img
-              class="mb-6 sm:mb-0 rounded-2xl w-11/12 max-w-[600px]"
+              class="mb-6 sm:mb-0 rounded-2xl w-11/12 max-w-[600px] clip-round"
               src="https://i.postimg.cc/sDRmRxvK/people-2567915-960-720.jpg" 
               alt="People in camp"
             >
@@ -109,7 +109,7 @@
           <!-- Experiences Cards container -->
           <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 mb-4">
             <!-- Card -->
-            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="">
+            <a class="mb-10 transition ease-in-out duration-300 hover:scale-[1.03]" href="/experience/">
               <article class="flex flex-col justify-center items-center rounded-xl shadow-md max-w-[380px] dark:bg-dark-sec">
                 <div>
                   <img
@@ -211,7 +211,7 @@
           <!-- End of Experiences Cards container -->
           
           <a
-            class="text-center text-xl text-main bg-orange-400 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
+            class="text-center lg:text-xl text-main bg-orange-400 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-300 h-[52px] md:h-auto md:text-2xl" 
             href="#"
           >
             See all
@@ -220,43 +220,6 @@
       </section>
       <!-- End of Experiences -->
 
-      <!-- Share your Experiences -->
-      <section class="flex justify-center flex-wrap mb-20 sm:mb-24 lg:mb-28 2xl:flex-col">
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
-          Share your Experiences
-        </h2>
-
-        <!-- Main container -->
-        <div class="flex justify-center items-center flex-wrap md:flex-row-reverse md:w-full">
-          <!-- Text container -->
-          <div class="flex flex-wrap justify-center md:w-1/2 md:max-w-[600px] md:pl-10">
-            <p class="mb-10 px-5 md:px-0">
-              Your story matters – and we want to hear it! Our Share Your Experience section is a place for you to contribute your own insights and advice about attending a summer camp in the USA as a foreign language student. Whether you want to share a funny anecdote or offer some tips on what to pack, your contribution will help future students make the most of their own camp experiences.
-            </p>
-    
-            <a
-              class="text-center text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
-              href="#"
-            >
-              Share your story
-            </a>
-          </div>
-          <!-- End of Text container -->
-
-          <!-- Image container -->
-          <div class="w-full flex justify-center items-center md:w-1/2 mt-14 md:mt-0">
-            <img
-              class="mb-6 sm:mb-0 rounded-2xl w-11/12 max-w-[600px] md:max-w-[700px] md:skew-x-13"
-              src="https://i.postimg.cc/xC5JsY2S/students-1822449-960-720-Edited.png" 
-              alt="Students playing"
-            >
-          </div>
-          <!-- End of Image container -->
-        </div>
-        <!-- End of Main container --> 
-      </section>
-      <!-- End of Share your Experiences -->
-
       <!-- Guide -->
       <section class="flex justify-center flex-wrap mb-20 sm:mb-24 lg:mb-28 2xl:flex-col">
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
@@ -264,7 +227,7 @@
         </h2>
 
         <!-- Main container -->
-        <div class="flex justify-center items-center flex-wrap md:flex-row md:w-full">
+        <div class="flex justify-center items-center flex-wrap md:flex-row-reverse md:w-full">
           <!-- Text container -->
           <div class="flex flex-wrap justify-center md:w-1/2 md:max-w-[600px] md:pl-10">
             <p class="mb-10 px-5 md:px-0">
@@ -272,7 +235,7 @@
             </p>
     
             <a
-              class="text-center text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
+              class="text-center lg:text-xl  text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
               href="#"
             >
               Read our Guide
@@ -294,6 +257,44 @@
       </section>
       <!-- End of Guide -->
 
+      <!-- Share your Experiences -->
+      <section class="flex justify-center flex-wrap mb-20 sm:mb-24 lg:mb-28 2xl:flex-col">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
+          Share your Experiences
+        </h2>
+
+        <!-- Main container -->
+        <div class="flex justify-center items-center flex-wrap md:flex-row md:w-full">
+          <!-- Text container -->
+          <div class="flex flex-wrap justify-center md:w-1/2 md:max-w-[600px] md:pl-10">
+            <p class="mb-10 px-5 md:px-0">
+              Your story matters – and we want to hear it! Our Share Your Experience section is a place for you to contribute your own insights and advice about attending a summer camp in the USA as a foreign language student. Whether you want to share a funny anecdote or offer some tips on what to pack, your contribution will help future students make the most of their own camp experiences.
+            </p>
+    
+            <a
+              class="text-center lg:text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
+              href="#"
+            >
+              Share your story
+            </a>
+          </div>
+          <!-- End of Text container -->
+
+          <!-- Image container -->
+          <div class="w-full flex justify-center items-center md:w-1/2 mt-14 md:mt-0">
+            <img
+              class="mb-6 sm:mb-0 rounded-2xl w-11/12 max-w-[600px] md:max-w-[700px] md:skew-x-13"
+              src="https://i.postimg.cc/xC5JsY2S/students-1822449-960-720-Edited.png" 
+              alt="Students playing"
+            >
+          </div>
+          <!-- End of Image container -->
+        </div>
+        <!-- End of Main container --> 
+      </section>
+      <!-- End of Share your Experiences -->
+
+
       <!-- Questions -->
       <section class="flex justify-center flex-wrap mb-20 sm:mb-24 lg:mb-28 2xl:flex-col">
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-9 sm:mb-12 md:mb-16 2xl:mb-20  text-center text-orange-400">
@@ -309,7 +310,7 @@
             </p>
     
             <a
-              class="text-center text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
+              class="text-center lg:text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
               href="#"
             >
               Ask your questions
@@ -346,7 +347,7 @@
             </p>
     
             <a
-              class="text-center text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
+              class="text-center lg:text-xl text-orange-500 bg-orange-200 px-4 py-3 lg:py-2 rounded-2xl transition ease-in-out hover:scale-110 duration-300 hover:text-main hover:bg-orange-400 h-[52px] md:text-2xl border border-orange-500"  
               href="#"
             >
               See more

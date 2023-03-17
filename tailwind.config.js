@@ -46,12 +46,17 @@ module.exports = {
         wiggle: "wiggle 200ms ease-in-out",
         click: "click 10000ms ease-in-out",
         card: "card 10000ms ease-in-out",
-      }
+      },
+      skew: {
+        '13': '-2deg',
+        '14': '2deg',
+      },
+      backgroundImage: {
+        'experience': "url('https://i.postimg.cc/xC5JsY2S/students-1822449-960-720-Edited.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
-    skew: {
-      '13': '-2deg',
-      '14': '2deg',
-    },
+    
 /*     boxShadow: {
       '2sm': '0 25px 50px 3px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.04)',
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
