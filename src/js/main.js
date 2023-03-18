@@ -29,11 +29,28 @@ const darkModeButton = document.querySelector('#dark-mode');
 const body = document.querySelector('body');
 
 
+const isDarkModeActive = JSON.parse(localStorage.getItem('darkMode'));
+
+document.addEventListener('DOMContentLoaded', () => {
+  isDarkModeActive ? body.classList.add('dark') : body.classList.remove('dark');
+});
+
+
+
+
 darkModeButton.addEventListener('click', () => {
   body.classList.toggle('dark');
+  localStorage.setItem('darkMode', body.classList.contains('dark'));
 })
 
-
+/* function setColors() {
+  if (isDarkModeActive) {
+    body.classList.add('dark');
+  } else {
+    body.classList.remove('dark');
+  }
+}
+ */
 menuIcon.addEventListener('click', () => {
   let list = document.querySelector('ul');
 
