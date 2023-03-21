@@ -52,8 +52,12 @@ module.exports = {
         '14': '2deg',
       },
       backgroundImage: {
-        'experience': "url('https://i.postimg.cc/xC5JsY2S/students-1822449-960-720-Edited.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'experiences': "url('https://i.postimg.cc/MG9qpCrW/river-219972-1.jpg')",
+        'experience': "url('https://i.postimg.cc/SKq2YY7m/adventure-1851092-Edited-1.png')",
+        'share': "url('https://i.postimg.cc/cLNnR31v/mountains-1761292-1.jpg')",
+        'guide': "url('https://i.postimg.cc/dQT4s8LX/road-1072823-Edited-1.png')",
+        'questions': "url('https://i.postimg.cc/LskBgMcZ/hd-wallpaper-3119826-Edited-1.png')",
+        'about': "url('https://i.postimg.cc/4x9jMmck/nature-3125912-Edited-1.png')",
       },
     },
     
