@@ -1,12 +1,16 @@
-const menuIcon = document.querySelector('ion-icon');
+// Menu
+const menuIcon = document.querySelector('#menu');
 const menuItems = document.querySelector('#menu-items');
-
+// Experiences
+const cardsSection = document.querySelector('#cards-section');
+const homeCardsSection = document.querySelector('#home-cards-section');
+// Dark mode
 const darkModeButton = document.querySelector('#dark-mode');
 const body = document.querySelector('body');
-
-
 const isDarkModeActive = JSON.parse(localStorage.getItem('darkMode'));
 
+
+// Dark mode
 document.addEventListener('DOMContentLoaded', () => {
   isDarkModeActive ? body.classList.add('dark') : body.classList.remove('dark');
 });
@@ -17,14 +21,8 @@ darkModeButton.addEventListener('click', () => {
   localStorage.setItem('darkMode', body.classList.contains('dark'));
 })
 
-/* function setColors() {
-  if (isDarkModeActive) {
-    body.classList.add('dark');
-  } else {
-    body.classList.remove('dark');
-  }
-}
- */
+
+// Menu
 menuIcon.addEventListener('click', () => {
   let list = document.querySelector('ul');
 
@@ -41,46 +39,20 @@ function toggleScroll() {
   }
 }
 
+
 // Call the toggleScroll function when the opacity of the ul element changes
 menuItems.addEventListener('transitionend', toggleScroll);
 
 
 // Experiences
-
-const cardsSection = document.querySelector('#cards-section');
-const experienceSection = document.querySelector('#experience-section');
-
-
-const experiences = [
-  {
-    name: "Maja",
-    age: 29,
-    thumbnail: 'https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...'
-  },
-  {
-    name: "Carlos",
-    age: 27,
-    thumbnail: 'https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...'
-  },
-  {
-    name: "Maria",
-    age: 23,
-    thumbnail: 'https://i.postimg.cc/wMHFNCW8/portrait-787522-960-720.jpg',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem architecto fugit dolores quod laudantium dignissimos aliquam maxime possimus ut atque totam magni voluptatem aspernatur, hic doloribus porro laborum dicta harum?...'
-  },
-]
-
-
-function renderCards() {
+function renderCards(data, container) {
   const toRender = [];
 
-  experiences.forEach(experience => {
+  data.forEach(experience => {
     const a = document.createElement('a');
     a.classList.add('mb-10', 'transition', 'ease-in-out', 'duration-300', 'hover:scale-[1.03]')
     //href
-    const url = new URL('/experiences/', window.location.href);
+    const url = new URL('/experience/', window.location.href);
     url.searchParams.set('name', experience.name.toLowerCase());
     a.href = url.toString();
 
@@ -92,6 +64,7 @@ function renderCards() {
     const img = document.createElement('img');
     img.classList.add('w-full', 'rounded-t-xl', 'max-h-[250px]');
     img.src = experience.thumbnail;
+    img.alt = `Experience of ${experience.name}`;
 
     const secDiv = document.createElement('div');
     secDiv.classList.add('px-4', 'pt-3');
@@ -123,42 +96,22 @@ function renderCards() {
     toRender.push(a);
   });
 
-  cardsSection.append(...toRender);
+  container.append(...toRender);
 }
 
 
-// renderCards();
+// Home Experiences
+const currentLocation = window.location.href;
+const topExperiences = experiences.slice(0, 3);
 
 
-const params = new URLSearchParams(window.location.search);
-const selectedExperience = params.get('name');
-
-
-function getExperience(name, experiences) {
-  for (let experience of experiences) {
-    const experienceName = experience.name.toLowerCase();
-    
-    if (experienceName === name) {
-      return experience;
-    }
-  }
+switch (currentLocation) {
+  case 'http://127.0.0.1:5500/':
+    renderCards(topExperiences, homeCardsSection);
+    break;
+  case 'http://127.0.0.1:5500/experiences/':
+    renderCards(experiences, cardsSection);
+    break;
+  default:
+    console.log('Ikke noe spesielt');
 }
-
-
-function showExperience(name) {
-  const experience = getExperience(name, experiences);
-
-  const h3 = document.createElement('h3');
-  h3.classList.add('font-bold', 'text-xl', 'sm:text-2xl', 'md:text-3xl', '2xl:text-4xl', 'mb-5', 'md:mb-10', 'text-orange-400');
-  const h3Text = document.createTextNode(`${experience.name}, ${experience.age}`);
-  h3.append(h3Text);
-
-  const p = document.createElement('p');
-  p.classList.add('mb-2');
-  pText = document.createTextNode(`${experience.text}`);
-  p.append(pText);
-
-  experienceSection.append(h3, p);
-}
-
-// showExperience(selectedExperience);
