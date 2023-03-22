@@ -27,12 +27,15 @@ menuIcon.addEventListener('click', () => {
   let list = document.querySelector('ul');
 
   menuIcon.name === 'menu-outline' ? (menuIcon.name = 'close-outline') : (menuIcon.name = 'menu-outline');
-  menuItems.classList.toggle('opacity-0');
+  menuItems.classList.toggle('hidden');
+  menuItems.classList.toggle('block');
+
+  toggleScroll()
 })
 
 
 function toggleScroll() {
-  if (!menuItems.classList.contains('opacity-0')) {
+  if (!menuItems.classList.contains('hidden')) {
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = 'auto';
@@ -41,7 +44,7 @@ function toggleScroll() {
 
 
 // Call the toggleScroll function when the opacity of the ul element changes
-menuItems.addEventListener('transitionend', toggleScroll);
+/* menuItems.addEventListener('transitionend', toggleScroll); */
 
 
 // Experiences
