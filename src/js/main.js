@@ -107,7 +107,7 @@ const topExperiences = experiences.slice(0, 3);
 
 
 switch (currentLocation) {
-  case 'https://summer-camp-experiences.netlify.app':
+  case 'https://summer-camp-experiences.netlify.app/':
     renderCards(topExperiences, homeCardsSection);
     break;
   case 'https://summer-camp-experiences.netlify.app/experiences/':
