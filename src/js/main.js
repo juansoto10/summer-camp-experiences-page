@@ -62,7 +62,7 @@ function renderCards(data, container) {
     const div = document.createElement('div');
 
     const img = document.createElement('img');
-    img.classList.add('w-full', 'rounded-t-xl', 'max-h-[250px]');
+    img.classList.add('w-full', 'rounded-t-xl', 'h-[240px]', 'sm:h-[220px]', 'md:h-[230px]', '2xl:h-[220px]');
     img.src = experience.thumbnail;
     img.alt = `Experience of ${experience.name}`;
 
@@ -75,9 +75,10 @@ function renderCards(data, container) {
     h3.append(h3Text);
 
     p = document.createElement('p');
-    p.classList.add('mb-2');
+    p.classList.add('mb-2', '2xl:h-[168px]');
     // Short text
-    pText = document.createTextNode(`${experience.text}`);
+    const shortText = experience.text.substr(0, 220) + '...';
+    pText = document.createTextNode(shortText);
     p.append(pText);
 
     span = document.createElement('span');
