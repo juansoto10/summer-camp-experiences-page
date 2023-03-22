@@ -643,6 +643,10 @@ video {
   top: 84px;
 }
 
+.top-\[0\.1rem\] {
+  top: 0.1rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2893,6 +2897,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:border-none {
+    border-style: none;
   }
 
   .md\:px-0 {
