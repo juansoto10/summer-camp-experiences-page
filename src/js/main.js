@@ -107,10 +107,10 @@ const topExperiences = experiences.slice(0, 3);
 
 
 switch (currentLocation) {
-  case 'http://127.0.0.1:5500/':
+  case 'https://summer-camp-experiences.netlify.app':
     renderCards(topExperiences, homeCardsSection);
     break;
-  case 'http://127.0.0.1:5500/experiences/':
+  case 'https://summer-camp-experiences.netlify.app/experiences/':
     renderCards(experiences, cardsSection);
     break;
   default:
