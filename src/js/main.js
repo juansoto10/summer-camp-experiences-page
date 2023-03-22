@@ -65,7 +65,7 @@ function renderCards(data, container) {
     const div = document.createElement('div');
 
     const img = document.createElement('img');
-    img.classList.add('w-full', 'rounded-t-xl', 'h-[240px]', 'sm:h-[220px]', 'md:h-[230px]', '2xl:h-[220px]');
+    img.classList.add('w-full', 'rounded-t-xl', 'h-[230px]', 'sm:h-[220px]', 'md:h-[230px]', '2xl:h-[220px]');
     img.src = experience.thumbnail;
     img.alt = `Experience of ${experience.name}`;
 
@@ -114,6 +114,12 @@ switch (currentLocation) {
     renderCards(topExperiences, homeCardsSection);
     break;
   case 'https://summer-camp-experiences.netlify.app/experiences/':
+    renderCards(experiences, cardsSection);
+    break;
+  case 'http://127.0.0.1:5500/':
+    renderCards(topExperiences, homeCardsSection);
+    break;
+  case 'http://127.0.0.1:5500/experiences/':
     renderCards(experiences, cardsSection);
     break;
   default:
